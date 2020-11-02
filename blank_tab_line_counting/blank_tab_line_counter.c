@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+main() {
+				int c, n1;
+				n1 = 0;
+
+				while ((c = getchar()) != EOF) {
+								if (c == '\n')
+												++n1;
+								if (c == '\t')
+												++n1;
+								if (c == ' ')
+												++n1;
+
+				}
+				
+				printf("%d blanks, tabs and newlines", n1);
+}
